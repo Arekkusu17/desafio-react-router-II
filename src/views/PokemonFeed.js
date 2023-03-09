@@ -17,7 +17,6 @@ export default function PokemonFeed() {
   useEffect(() => {
     const getPokemonData = async () => {
       const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=151');
-      console.log(response.data.results);
       setPokemonList(response.data.results)
     };
     getPokemonData()
@@ -31,7 +30,6 @@ export default function PokemonFeed() {
     const selectedPokemonName = event.target.value;
     const selectedPokemon = pokemonList.find(pokemon => pokemon.name === selectedPokemonName);
     setSelectedPokemon(selectedPokemon);
-    console.log(selectedPokemon);
   }
 
   return (

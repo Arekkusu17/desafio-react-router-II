@@ -16,11 +16,9 @@ export default function PokemonProfile() {
   useEffect(() => {
     const getPokemonInfo = async () => {
       setLoadingPokemonInfo(true);
-      console.log("cargando");
       axios
         .get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}/`)
         .then((response) => {
-          console.log(response.data);
           setTimeout(() => {
             setPokemonInfo(response.data);
             setLoadingPokemonInfo(false);
