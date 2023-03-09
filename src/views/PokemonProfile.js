@@ -5,6 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { ClipLoader } from "react-spinners";
 
 export default function PokemonProfile() {
+
   const { name: pokemonName } = useParams();
   const [pokemonInfo, setPokemonInfo] = useState(null);
   const [loadingPokemonInfo, setLoadingPokemonInfo] = useState(false)
@@ -23,11 +24,12 @@ export default function PokemonProfile() {
           setTimeout(() => {
             setPokemonInfo(response.data);
             setLoadingPokemonInfo(false);
-          }, 1500);
+          }, 2000);
         })
         .catch((error) => {
           console.error(error);
           setLoadingPokemonInfo(false);
+          navigate('/pokemon')
         });
     };
     getPokemonInfo();
@@ -60,7 +62,7 @@ export default function PokemonProfile() {
                         <h5 className="card-title text-capitalize">
                           #{pokemonInfo.id} - {pokemonInfo.name}
                         </h5>
-                        <div className="card-text poke-info-text">
+                        <div className=" card-text poke-info-text">
                           {pokemonInfo.types.map((type, idx) => {
                             return (
                               <div
@@ -89,7 +91,7 @@ export default function PokemonProfile() {
                 </div>
                 <button
                   type="button"
-                  className="btn btn-success w-50 mx-auto"
+                  className="nes-btn is-success w-50 mx-auto"
                   onClick={() => {
                     navigate('/pokemon');
                   }}

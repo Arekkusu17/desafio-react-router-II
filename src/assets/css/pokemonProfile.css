@@ -79,7 +79,6 @@ color:white
 }
 
 .poke-card{
-  
   width: 75%;
 }
 
@@ -95,11 +94,19 @@ color:white
   text-transform: capitalize;
   border: 1px solid black;
   border-radius: 5px;
-  width: 65px;
+  width: 120px;
+  height:30px;
+  line-height: 2;
+  
 }
 
 .base-stats{
-  padding: 0;
+  padding: 0.7rem;
   display: flex;
   flex-direction: column;
 }
+
+.nes-btn{
+  border-image-repeat:stretch
+}
+
