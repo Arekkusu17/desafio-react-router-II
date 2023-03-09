@@ -7,7 +7,7 @@ export default function NavBar() {
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid ">
         {/* IMAGEN  class name order-lg-3*/}
-        <NavLink to='/' className={'text-decoration-none'}>...<i className="nes-ash"></i></NavLink>
+        <NavLink to='/' className={'text-decoration-none'}><span className="is-error">pokeDex!</span></NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
