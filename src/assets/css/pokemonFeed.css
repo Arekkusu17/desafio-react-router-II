@@ -1,7 +1,7 @@
 .select-pokemon-section{
   padding: 4rem;
   align-items: center;
-  height: 80vh;
+  height: 70vh;
 }
 
 #default_select{
@@ -18,7 +18,11 @@
 }
 
 @media screen and (max-width:768px) {
-  
+  .select-pokemon-section{
+    padding: auto;
+    align-items: center;
+    height: 70vh;
+  }
   .nes-btn{
     max-width:100%}
 }
