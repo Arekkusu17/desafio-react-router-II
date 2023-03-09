@@ -7,5 +7,13 @@ section{
 }
 
 .bg-image{
-  max-width: 65%;
+  max-height: 70vh;
+  max-width: 60%;
+}
+
+
+@media screen and (max-width:768px) {
+  .bg-image{
+    height: auto;
+    max-width:75%;}
 }
