@@ -29,7 +29,7 @@ export default function PokemonProfile() {
         .catch((error) => {
           console.error(error);
           setLoadingPokemonInfo(false);
-          navigate('/pokemon')
+          navigate('/error')
         });
     };
     getPokemonInfo();
@@ -48,7 +48,7 @@ export default function PokemonProfile() {
               </div>
             ) : (
               <>
-                <div className={`poke-card card mb-3 mx-auto `}>
+                <div className={`nes-container is-rounded poke-card card mb-3 mx-auto `}>
                   <div className="row g-0">
                     <div className="col-md-4">
                       <img
