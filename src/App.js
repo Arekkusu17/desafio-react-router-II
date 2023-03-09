@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
-import PokemonProvider from './context/PokemonProvider';
 import Home from './views/Home';
+import NotFound from './views/NotFound';
 import PokemonFeed from './views/PokemonFeed';
 import PokemonProfile from './views/PokemonProfile';
 
@@ -17,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/pokemon" element={<PokemonFeed />} />
           <Route path="/pokemon/:name" element={<PokemonProfile />} />
+          <Route path="*" element={<NotFound />} />
 
         </Routes>
 

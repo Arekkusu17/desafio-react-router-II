@@ -1,0 +1,16 @@
+.section-not-found{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  gap:1rem
+}
+
+.pokeball-gif{
+  max-width: 50%;
+}
+
+.back-to-home{
+  height:50%;
+  justify-content: space-between;
+}
