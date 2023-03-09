@@ -1,4 +1,25 @@
 .select-pokemon-section{
-  padding-top: 4rem;
+  padding: 4rem;
   align-items: center;
+}
+
+#default_select{
+  border-image-repeat:stretch
+}
+
+.nes-container{
+  align-items: center;
+  height: 60%;
+}
+
+.nes-btn{
+  max-width: 25%;
+}
+
+@media screen and (max-width:768px) {
+  .select-pokemon-section{
+    padding: 1rem;
+  }
+  .nes-btn{
+    max-width:100%}
 }
