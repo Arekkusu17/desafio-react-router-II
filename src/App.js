@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import Home from './views/Home';
 import NotFound from './views/NotFound';
@@ -18,9 +19,8 @@ function App() {
           <Route path="/pokemon" element={<PokemonFeed />} />
           <Route path="/pokemon/:name" element={<PokemonProfile />} />
           <Route path="*" element={<NotFound />} />
-
         </Routes>
-
+        <Footer />
       </BrowserRouter>
     </div>
   );

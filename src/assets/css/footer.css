@@ -1,0 +1,9 @@
+footer{
+  height: 10vh;
+}
+
+.link-icons{
+  display:flex;
+  justify-content: center;
+  gap:2rem
+}
