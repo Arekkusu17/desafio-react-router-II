@@ -53,7 +53,7 @@ export default function PokemonProfile() {
                     <div className="col-md-4">
                       <img
                         src={pokemonInfo.sprites.other['official-artwork'].front_default}
-                        className="img-fluid rounded-start"
+                        className="img-fluid rounded-start poke-img"
                         alt="..."
                       />
                     </div>

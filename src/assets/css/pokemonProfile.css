@@ -71,16 +71,17 @@ color:white
 
 
 .pokemon-profile-section{
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   height: 70vh;
-  padding-top: 4rem;
+  padding-top:2rem;
 }
 
 .poke-card{
   width: 75%;
 }
+.poke-img{}
 
 .poke-info-text{
   display: flex;
@@ -110,3 +111,12 @@ color:white
   border-image-repeat:stretch
 }
 
+@media screen and (max-width:425px) {
+  .pokemon-profile-section{
+    height: auto;
+    
+  }
+  .poke-card{
+    width: 85%;
+  }
+}
